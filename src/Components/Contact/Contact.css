@@ -6,11 +6,10 @@
 .contact {
   padding-bottom: 50px;
 }
-
-.contact-content h3 {
+h3 {
   font-size: 40px;
   color: #ff7171 !important;
-  font-family: "Montserrat" sans-serif;
+  font-family: "roboto" !important;
   margin-bottom: 8rem;
   text-align: center;
 }

@@ -19,18 +19,39 @@ function Myself() {
         <Typography className="line1" variant="h5" gutterBottom>
           Hi! myself,
         </Typography>
-        <Typography className="line2" variant="h3" gutterBottom>
-          GAURAV SINHA
-        </Typography>
-        <Typography className="line3" variant="h2" gutterBottom>
-          {` < Software Developer />`}
-        </Typography>
-        <Typography className="line4" variant="h2" gutterBottom>
-          Software Developer
-        </Typography>
-        <Link to="contact" smooth duration={1000}>
-          <Button text="Connect with me" />
-        </Link>
+        <div
+          data-aos="fade-right"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="1500"
+        >
+          <Typography className="line2" variant="h3" gutterBottom>
+            GAURAV SINHA
+          </Typography>
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="1500"
+        >
+          <Typography className="line3" variant="h2" gutterBottom>
+            {` < Software Developer />`}
+          </Typography>
+          <Typography className="line4" variant="h2" gutterBottom>
+            Software Developer
+          </Typography>{" "}
+        </div>
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <Link to="contact" smooth duration={1000}>
+            <Button text="Connect with me" />
+          </Link>
+        </div>
       </div>
     </div>
   );

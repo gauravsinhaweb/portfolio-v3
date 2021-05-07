@@ -6,6 +6,7 @@ import EmailIcon from "@material-ui/icons/Email";
 import Tooltip from "@material-ui/core/Tooltip";
 import animationData from "./smart.json";
 import Lottie from "react-lottie";
+
 function About() {
   const defaultOptions = {
     loop: true,
@@ -36,24 +37,45 @@ function About() {
         ) : null}
         <div className="bg-underlay-about bg-underlay"></div>
         <div className="about-content">
-          <h3 className="">About Me</h3>
-          <p>
-            Hello, I'm Gaurav Sinha, a 21 year old undergraduate student, who
-            loves coding and designing.. Currently, I am in 2nd year persuing
-            B.Tech from{" "}
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://en.wikipedia.org/wiki/Techno_International_New_Town"
-            >
-              Techno India , Kolkata{" "}
-            </a>
-            .
-            <br />
-            Following below are links to my profile to know more about me, and
-            the further pages contains my skillset and projects I've made/worked
-            with.
-          </p>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <h3 className="">About Me</h3>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="2000"
+          >
+            <p>
+              Hello, I'm Gaurav Sinha, a 21 year old undergraduate student, who
+              loves coding and designing.. Currently, I am in 2nd year persuing
+              B.Tech from{" "}
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://en.wikipedia.org/wiki/Techno_International_New_Town"
+              >
+                Techno India , Kolkata{" "}
+              </a>
+              .
+              <br />
+              Following below are links to my profile to know more about me, and
+              the further pages contains my skillset and projects I've
+              made/worked with.
+            </p>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="300"
+          data-aos-duration="4000"
+        >
           <div className="about-icons">
             <Tooltip title="Github" placement="right-start">
               <a
@@ -85,7 +107,7 @@ function About() {
               </a>
             </Tooltip>
           </div>{" "}
-        </div>{" "}
+        </div>
       </div>
     </>
   );

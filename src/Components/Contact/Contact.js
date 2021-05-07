@@ -75,62 +75,72 @@ function Contact({ theme }) {
       <div id="contact" className="page contact" style={{ padding: "0" }}>
         <div className="bg-underlay-contact bg-underlay"></div>
         <div className="contact-content" style={{ marginTop: "12rem" }}>
-          <h3>Let"s have a chat.. 🙂</h3>
-          <form method="POST" className="form" onSubmit={formSubmitHandler}>
-            {alert ? (
-              <Alert
-                className="alert"
-                onClose={() => setAlert(false)}
-                severity="error"
+          <div
+            data-aos-anchor-placement="center-center"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+          >
+            {" "}
+            <h3>Let's have a chat {`:D`}</h3>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <form method="POST" className="form" onSubmit={formSubmitHandler}>
+              {alert ? (
+                <Alert
+                  className="alert"
+                  onClose={() => setAlert(false)}
+                  severity="error"
+                >
+                  {alertMessage}
+                </Alert>
+              ) : (
+                ""
+              )}
+              {success ? (
+                <Alert
+                  className="alert"
+                  onClose={() => setSuccess(false)}
+                  severity="success"
+                >
+                  <p className="success-msg">
+                    Thanks for your message! Expect a reply soon
+                  </p>
+                </Alert>
+              ) : (
+                ""
+              )}
+              <input
+                id="name"
+                type="text"
+                value={formFields.name}
+                onChange={formInputHandler}
+                placeholder="Name"
+              />
+              <input
+                id="email"
+                type="email"
+                value={formFields.email}
+                onChange={formInputHandler}
+                placeholder="Email"
+              />
+              <textarea
+                id="message"
+                value={formFields.message}
+                onChange={formInputHandler}
+                rows="9"
+                placeholder="Your message here.."
+              />
+              <Button
+                color="secondary"
+                variant="contained"
+                disabled={loading ? true : false}
+                type="submit"
               >
-                {alertMessage}
-              </Alert>
-            ) : (
-              ""
-            )}
-            {success ? (
-              <Alert
-                className="alert"
-                onClose={() => setSuccess(false)}
-                severity="success"
-              >
-                <p className="success-msg">
-                  Thanks for your message! Expect a reply soon
-                </p>
-              </Alert>
-            ) : (
-              ""
-            )}
-            <input
-              id="name"
-              type="text"
-              value={formFields.name}
-              onChange={formInputHandler}
-              placeholder="Name"
-            />
-            <input
-              id="email"
-              type="email"
-              value={formFields.email}
-              onChange={formInputHandler}
-              placeholder="Email"
-            />
-            <textarea
-              id="message"
-              value={formFields.message}
-              onChange={formInputHandler}
-              rows="9"
-              placeholder="Your message here.."
-            />
-            <Button
-              color="secondary"
-              variant="contained"
-              disabled={loading ? true : false}
-              type="submit"
-            >
-              Submit
-            </Button>
-          </form>
+                Submit
+              </Button>
+            </form>
+          </div>
         </div>
         {!show ? (
           <Lottie
