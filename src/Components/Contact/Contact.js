@@ -31,6 +31,7 @@ function Contact({ theme }) {
       [e.target.id]: e.target.value,
     });
   };
+  const [show] = useState(window.innerWidth <= 600 ? true : false);
 
   const formSubmitHandler = (e) => {
     setLoading(true);
@@ -74,7 +75,7 @@ function Contact({ theme }) {
       <div id="contact" className="page contact" style={{ padding: "0" }}>
         <div className="bg-underlay-contact bg-underlay"></div>
         <div className="contact-content" style={{ marginTop: "12rem" }}>
-          <h3>Let"s have a Chat..😺</h3>
+          <h3>Let"s have a chat.. 🙂</h3>
           <form method="POST" className="form" onSubmit={formSubmitHandler}>
             {alert ? (
               <Alert
@@ -131,16 +132,18 @@ function Contact({ theme }) {
             </Button>
           </form>
         </div>
-        <Lottie
-          options={defaultOptions}
-          height={250}
-          width={250}
-          style={{
-            bottom: "0rem",
-            position: "absolute",
-            right: "1rem",
-          }}
-        />
+        {!show ? (
+          <Lottie
+            options={defaultOptions}
+            height={250}
+            width={250}
+            style={{
+              bottom: "0rem",
+              position: "absolute",
+              right: "1rem",
+            }}
+          />
+        ) : null}
         <div
           style={{
             marginTop: "auto",
