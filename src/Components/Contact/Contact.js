@@ -76,7 +76,6 @@ function Contact({ theme }) {
         <div className="bg-underlay-contact bg-underlay"></div>
         <div className="contact-content" style={{ marginTop: "12rem" }}>
           <div
-            data-aos-anchor-placement="center-center"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-duration="1000"
