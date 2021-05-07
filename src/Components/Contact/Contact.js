@@ -75,14 +75,10 @@ function Contact({ theme }) {
       <div id="contact" className="page contact" style={{ padding: "0" }}>
         <div className="bg-underlay-contact bg-underlay"></div>
         <div className="contact-content" style={{ marginTop: "12rem" }}>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-duration="1000"
-          >
-            {" "}
-            <h3>Let's have a chat {`:D`}</h3>
-          </div>
+          {" "}
+          <h3 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
+            Let's have a chat {`:D`}
+          </h3>
           <div data-aos="fade-up" data-aos-duration="1000">
             <form method="POST" className="form" onSubmit={formSubmitHandler}>
               {alert ? (

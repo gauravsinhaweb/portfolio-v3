@@ -11,7 +11,7 @@ function Myself() {
       <div className="bg-underlay-myself bg-underlay"></div>
       <div className="sonar-wrapper">
         <div className="sonar-emitter">
-          <img src={image} alt="Gaurav" />
+          <img src={image} alt="gaurav" />
           <div className="sonar-wave"></div>
         </div>
       </div>
