@@ -3,7 +3,7 @@ import "./Myself.css";
 import { Link } from "react-scroll";
 import Typography from "@material-ui/core/Typography";
 import Button from "../Button/Button";
-import image from "../../gaurav.svg";
+import image from "../../gaurav.jpg";
 
 function Myself() {
   return (

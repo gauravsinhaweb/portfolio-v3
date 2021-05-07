@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Myself from "./Components/Myself/Myself";
 import About from "./Components/About/About";
 // import Skillset from "./Components/Skillset/Skillset";
 // import Project from "./Components/Projects/Project";
-import Contact from "./Components/Contact/Contact";
+// import Contact from "./Components/Contact/Contact";
 // import WorkExp from "./Components/WorkExp/WorkExp";
 // import Footer from "./Components/Footer/Footer";
 import Toggle from "./Components/Toggle/Toggle";
@@ -32,23 +32,21 @@ function App() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
-  const [loading, setLoading] = useState(true);
-
-  setTimeout(function () {
-    setLoading(false);
-  }, 1700);
+  // const [loading, setLoading] = useState(false);
+  const Contact = React.lazy(() => import("./Components/Contact/Contact")); // Lazy-loaded
 
   return (
     <>
-      {loading ? (
-        <Lottie
-          options={defaultOptions}
-          height={250}
-          width={250}
-          style={{ marginTop: "12rem" }}
-        />
-      ) : (
+      <Suspense
+        fallback={
+          <Lottie
+            options={defaultOptions}
+            height={250}
+            width={250}
+            style={{ marginTop: "12rem" }}
+          />
+        }
+      >
         <>
           <div className={theme ? "App dark" : "App light"}>
             <Toggle toggleTheme={toggleTheme} theme={theme} />
@@ -58,7 +56,7 @@ function App() {
             <Contact theme={theme} />
           </div>{" "}
         </>
-      )}
+      </Suspense>
     </>
   );
 }
