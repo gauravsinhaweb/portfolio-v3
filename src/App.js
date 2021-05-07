@@ -10,9 +10,10 @@ import Contact from "./Components/Contact/Contact";
 // import Footer from "./Components/Footer/Footer";
 import Toggle from "./Components/Toggle/Toggle";
 import Aos from "aos";
-
+import animationData from "./loading.json";
+import Lottie from "react-lottie";
 function App() {
-  const delay = useEffect(() => {
+  useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
   const [theme, setTheme] = useState(false);
@@ -23,17 +24,41 @@ function App() {
       setTheme(true);
     }
   };
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  const [loading, setLoading] = useState(true);
+
+  setTimeout(function () {
+    setLoading(false);
+  }, 1000);
+
   return (
     <>
-      <delay>
-        <div className={theme ? "App dark" : "App light"}>
-          <Toggle toggleTheme={toggleTheme} theme={theme} />
-          <Navbar />
-          <Myself />
-          <About />
-          <Contact theme={theme} />
-        </div>{" "}
-      </delay>
+      {loading ? (
+        <Lottie
+          options={defaultOptions}
+          height={250}
+          width={250}
+          style={{ marginTop: "12rem" }}
+        />
+      ) : (
+        <>
+          <div className={theme ? "App dark" : "App light"}>
+            <Toggle toggleTheme={toggleTheme} theme={theme} />
+            <Navbar />
+            <Myself />
+            <About />
+            <Contact theme={theme} />
+          </div>{" "}
+        </>
+      )}
     </>
   );
 }
