@@ -146,7 +146,7 @@ function Contact({ theme }) {
         ) : null}
         <div
           style={{
-            marginTop: "auto",
+            marginTop: "2rem",
             position: "relative",
             marginBottom: "5px",
             fontFamily: "lato",
