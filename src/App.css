@@ -1,38 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&display=swap");
+
+:root {
+  --light: #ececec;
+  --lighter: rgba(221, 221, 221, 0.79);
+  --dark: #636363;
+  --main-text: #17181f;
+  --sec-text: #4e4e4e;
+  --dark-green: #1f5f58;
+  --dark-green2: #27726993;
+  --dark-green3: #43978d93;
+}
+
 .App {
-  text-align: center;
+  min-height: 100vh;
+  font-family: "lato", sans-serif;
+}
+.light {
+  background-color: var(--light);
+}
+.dark {
+  background-color: var(--main-text) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.show {
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
+.hide {
+  display: none !important;
+}
+
+.bg-underlay {
+  min-height: 100vh;
+  position: absolute;
+  width: 65vw;
+  top: 0;
+  z-index: 0;
+  opacity: 0.13;
+  height: 100%;
+}
+
+.dark .bg-underlay {
+  display: none;
+}
+
+.dark .sonar-wave {
+  background-color: #41d45c;
+}
+
+.page {
+  z-index: 99;
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-family: "Rubik" !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 990px) {
+  .bg-underlay {
+    width: 50vw;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.footer {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--main-text);
+  color: var(--light);
+}
+
+.footer p {
+  margin: 4px 0;
+  text-align: center;
+}
+
+.footer a {
+  background-color: var(--light);
+  color: var(--main-text);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 5px;
+  border-radius: 3px;
 }

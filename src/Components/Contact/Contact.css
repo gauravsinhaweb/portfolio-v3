@@ -1,0 +1,119 @@
+.bg-underlay-contact {
+  left: 0;
+  background-color: #f5885d;
+}
+
+.contact {
+  padding-bottom: 50px;
+}
+
+.contact-content h3 {
+  font-size: 40px;
+  color: #ff7171 !important;
+  font-family: "Montserrat" sans-serif;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.success-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-msg .icon {
+  color: #567bf1;
+  margin-left: 7px;
+  font-size: 21px !important;
+}
+
+.contact-content {
+  z-index: 99;
+  padding: 1rem;
+}
+
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45vw;
+}
+
+.form input,
+.form textarea {
+  min-width: 360px;
+  margin: 10px;
+  padding: 15px 12px;
+  resize: none;
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  border: 0px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+}
+
+.alert {
+  width: 100%;
+  min-width: 360px;
+}
+
+@media screen and (max-width: 416px) {
+  .form input,
+  .form textarea {
+    min-width: 100%;
+  }
+
+  .contact-content form {
+    width: 90vw;
+  }
+  .alert {
+    min-width: 100%;
+  }
+}
+
+/* DARK MODE  */
+.dark .contact-content h1 {
+  color: rgb(7, 7, 250);
+}
+
+.dark .form input:focus,
+.dark .form textarea:focus {
+  border-left: 5px solid rgb(0, 0, 165);
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-left: 4px solid rgb(0, 0, 165);
+}
+
+.form-btnn:hover {
+  cursor: pointer;
+  box-shadow: inset -2px -2px 6pc rgba(255, 255, 255, 0.2),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.dark .form-btnn {
+  color: rgb(0, 0, 165);
+  background: #eef5fd;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+    5px 5px 15px rgba(0, 0, 0, 0.7);
+  padding: 13px 0px;
+}
+
+.dark .form-btnn:hover {
+  background: #567bf1;
+  box-shadow: inset -2px -2px 6pc rgba(255, 255, 255, 0.02),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+  color: #567bf1;
+}
+
+@media screen and (max-width: 250px) {
+  .form-btnn {
+    min-width: 100%;
+  }
+}
