@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-import AddCircleIcon from "@material-ui/icons/AddCircle";
 import GitHubIcon from "@material-ui/icons/GitHub";
-
+import MenuIcon from "@material-ui/icons/Menu";
+import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 function Navbar() {
+  const [toggle, setToggle] = useState(false);
   window.addEventListener("resize", () => {
     if (window.innerWidth <= 600) {
       setShow(false);
@@ -24,9 +25,16 @@ function Navbar() {
     <div className="navbar">
       <div
         onClick={() => setShow(!show)}
-        className={show ? "nav-mini-screen rotate" : "nav-mini-screen"}
+        className={show ? "nav-mini-screen rotate" : "nav-mini-screen disabled"}
       >
-        <AddCircleIcon className="nav-icon" />
+        {toggle ? (
+          <MenuOpenIcon
+            className="nav-icon"
+            onClick={() => setToggle(!toggle)}
+          />
+        ) : (
+          <MenuIcon className="nav-icon" onClick={() => setToggle(!toggle)} />
+        )}{" "}
       </div>
       <div className={show ? "nav-list" : "hide"}>
         <Link onClick={linkHandler} to="about" smooth duration={1000}>
