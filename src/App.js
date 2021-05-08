@@ -51,14 +51,17 @@ function App() {
             <Toggle toggleTheme={toggleTheme} theme={theme} />
             <Navbar />
             <Myself />
+            <div style={{ height: "4rem" }}></div>
             <About />
+            <div style={{ height: "4rem" }}></div>
+
             <Contact theme={theme} />
             <div
               style={{
                 textAlign: "center",
-                marginTop: "2rem",
+                marginTop: "1rem",
                 position: "relative",
-                paddingBottom: "5px",
+                paddingBottom: "1rem",
                 fontFamily: "lato",
                 opacity: "0.5",
                 color: theme ? "#eee" : "#000",
