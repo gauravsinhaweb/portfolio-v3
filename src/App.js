@@ -54,7 +54,7 @@ function App() {
             <div style={{ height: "4rem" }}></div>
             <About />
             <div style={{ height: "4rem" }}></div>
-            <Project />
+            {/* <Project /> */}
             <Contact theme={theme} />
             <div
               style={{
