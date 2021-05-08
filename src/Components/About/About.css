@@ -43,6 +43,7 @@
   justify-content: space-around;
   align-items: center;
   width: 30vw;
+  margin-bottom: 10rem;
 }
 
 .about-icons .icons {
@@ -80,7 +81,8 @@
   }
   .about-content p {
     width: 25rem;
-    padding: 0 1rem;
+    padding: 0em 1.5em;
+    line-height: 2em;
   }
 }
 /* DARK MODE  */

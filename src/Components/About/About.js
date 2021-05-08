@@ -48,8 +48,10 @@ function About() {
           <div
             data-aos="fade-up"
             data-aos-offset="200"
-            data-aos-delay="100"
+            data-aos-delay="500"
             data-aos-duration="2000"
+            debounceDelay="50" // the delay on debounce used while resizing window (advanced)
+            throttleDelay="99"
           >
             <p>
               Hello, I'm Gaurav Sinha, a 21 year old undergraduate student, who
@@ -70,44 +72,37 @@ function About() {
             </p>
           </div>
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="300"
-          data-aos-duration="4000"
-        >
-          <div className="about-icons">
-            <Tooltip title="Github" placement="right-start">
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://github.com/gauravsinhaweb"
-              >
-                <GitHubIcon className="icons" />
-              </a>
-            </Tooltip>
+        <div data-aos="fade-up" className="about-icons">
+          <Tooltip title="Github" placement="right-start">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/gauravsinhaweb"
+            >
+              <GitHubIcon className="icons" />
+            </a>
+          </Tooltip>
 
-            <Tooltip title="LinkedIn" placement="right-start">
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://linkedin.com/in/gaurav-sinha-032386187"
-              >
-                <LinkedInIcon className="icons" />
-              </a>
-            </Tooltip>
+          <Tooltip title="LinkedIn" placement="right-start">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://linkedin.com/in/gaurav-sinha-032386187"
+            >
+              <LinkedInIcon className="icons" />
+            </a>
+          </Tooltip>
 
-            <Tooltip title="sinhagaurav.me@gmail.com" placement="right-start">
-              <a
-                href="mailto:sinhagaurav.me@gmail.com"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <EmailIcon className="icons" />
-              </a>
-            </Tooltip>
-          </div>{" "}
-        </div>
+          <Tooltip title="sinhagaurav.me@gmail.com" placement="right-start">
+            <a
+              href="mailto:sinhagaurav.me@gmail.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <EmailIcon className="icons" />
+            </a>
+          </Tooltip>
+        </div>{" "}
       </div>
     </>
   );

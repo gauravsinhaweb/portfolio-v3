@@ -149,18 +149,6 @@ function Contact({ theme }) {
             }}
           />
         ) : null}
-        <div
-          style={{
-            marginTop: "2rem",
-            position: "relative",
-            marginBottom: "5px",
-            fontFamily: "lato",
-            opacity: "0.5",
-            color: theme ? "#eee" : "#000",
-          }}
-        >
-          Made with ❤️ by Gaurav Sinha • 2021
-        </div>
       </div>
     </>
   );

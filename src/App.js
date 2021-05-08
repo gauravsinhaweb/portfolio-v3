@@ -53,6 +53,19 @@ function App() {
             <Myself />
             <About />
             <Contact theme={theme} />
+            <div
+              style={{
+                textAlign: "center",
+                marginTop: "2rem",
+                position: "relative",
+                paddingBottom: "5px",
+                fontFamily: "lato",
+                opacity: "0.5",
+                color: theme ? "#eee" : "#000",
+              }}
+            >
+              Made with ❤️ by Gaurav Sinha • 2021
+            </div>
           </div>{" "}
         </>
       </Suspense>
