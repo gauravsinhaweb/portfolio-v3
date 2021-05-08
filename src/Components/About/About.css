@@ -35,6 +35,7 @@
   text-align: justify;
   font-size: 22px;
   color: var(--sec-text);
+  text-transform: capitalize;
 }
 
 .about-icons {
@@ -43,14 +44,10 @@
   justify-content: space-around;
   align-items: center;
   width: 30vw;
-  margin-bottom: 10rem;
+  z-index: 999999;
 }
 
 .about-icons .icons {
-  /* box-shadow: 0 -3px 3px #6b2a2a3a,
-      inset 0 -3px 3px #6b2a2a3a,
-       0 3px 3px #6b2a2a3a,
-      inset 0 3px 3px #6b2a2a3a; */
   color: #126e82;
   opacity: 1;
   font-size: 2.8rem !important;
