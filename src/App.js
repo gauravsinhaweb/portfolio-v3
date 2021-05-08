@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 // import Myself from "./Components/Myself/Myself";
 import About from "./Components/About/About";
 // import Skillset from "./Components/Skillset/Skillset";
-import Project from "./Components/Projects/Project";
+// import Project from "./Components/Projects/Project";
 import Contact from "./Components/Contact/Contact";
 // import WorkExp from "./Components/WorkExp/WorkExp";
 // import Footer from "./Components/Footer/Footer";
