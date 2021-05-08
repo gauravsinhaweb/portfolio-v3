@@ -31,7 +31,7 @@
 .about-content p {
   margin: 1rem 0;
   width: 60rem;
-  line-height: 2;
+  line-height: 2.5;
   text-align: justify;
   font-size: 22px;
   color: var(--sec-text);

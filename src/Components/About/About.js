@@ -48,7 +48,7 @@ function About() {
           <div
             data-aos="fade-up"
             data-aos-offset="200"
-            data-aos-delay="500"
+            data-aos-delay="100"
             data-aos-duration="2000"
             debounceDelay="50" // the delay on debounce used while resizing window (advanced)
             throttleDelay="99"
