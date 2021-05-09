@@ -117,7 +117,7 @@ function Contact({ theme }) {
                 type="email"
                 value={formFields.email}
                 onChange={formInputHandler}
-                placeholder="Email"
+                placeholder="Your email"
               />
               <textarea
                 id="message"
