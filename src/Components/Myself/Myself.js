@@ -26,7 +26,7 @@ function Myself() {
           data-aos-duration="1500"
         >
           <Typography className="line2" variant="h3" gutterBottom>
-            GAURAV SINHA
+            Gaurav Sinha
           </Typography>
         </div>
         <div

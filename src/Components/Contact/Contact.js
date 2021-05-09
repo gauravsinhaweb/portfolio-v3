@@ -143,7 +143,7 @@ function Contact({ theme }) {
             height={250}
             width={250}
             style={{
-              bottom: "0rem",
+              bottom: "-4rem",
               position: "absolute",
               right: "1rem",
             }}

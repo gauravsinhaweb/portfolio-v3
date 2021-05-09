@@ -21,7 +21,7 @@
   background: #555;
 }
 :root {
-  --light: #ececec;
+  --light: white;
   --lighter: rgba(221, 221, 221, 0.79);
   --dark: #636363;
   --main-text: #17181f;
@@ -33,7 +33,6 @@
 
 .App {
   user-select: none;
-
   min-height: 100vh;
   font-family: "lato", sans-serif;
 }
