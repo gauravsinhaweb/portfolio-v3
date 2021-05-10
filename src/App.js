@@ -1,10 +1,10 @@
 import React, { Suspense, useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
-// import Myself from "./Components/Myself/Myself";
+import Myself from "./Components/Myself/Myself";
 import About from "./Components/About/About";
 // import Skillset from "./Components/Skillset/Skillset";
-import Project from "./Components/Projects/Project";
+// import Project from "./Components/Projects/Project";
 import Contact from "./Components/Contact/Contact";
 // import WorkExp from "./Components/WorkExp/WorkExp";
 // import Footer from "./Components/Footer/Footer";
@@ -32,7 +32,7 @@ function App() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  const Myself = React.lazy(() => import("./Components/Myself/Myself")); // Lazy-loaded
+  const Project = React.lazy(() => import("./Components/Projects/Project")); // Lazy-loaded
 
   return (
     <>
