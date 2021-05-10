@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Project.css";
-import test from "../../images/MacBook.png";
+import test from "../../images/MacBook.svg";
 function Project() {
   const [show] = useState(window.innerWidth <= 600 ? true : false);
 
