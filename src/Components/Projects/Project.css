@@ -16,6 +16,22 @@
   justify-content: space-around;
 }
 
+.MuiSkeleton-wave::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  animation: MuiSkeleton-keyframes-wave 1.6s ease-in-out 0.5s infinite;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.08),
+    transparent
+  );
+}
 .card {
   position: relative;
   margin: 2rem;
