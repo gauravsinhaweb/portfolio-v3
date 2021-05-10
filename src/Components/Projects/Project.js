@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Project.css";
 import test from "../../images/MacBook.svg";
-import { Skeleton } from "@material-ui/lab";
 function Project() {
   const [show] = useState(window.innerWidth <= 600 ? true : false);
 
@@ -28,19 +27,7 @@ function Project() {
                 data-aos="fade-right"
                 className="card"
               >
-                {!test ? (
-                  <Skeleton
-                    animation="wave"
-                    variant="rect"
-                    height="100%"
-                    width="100%"
-                    style={{ color: "#000", borderRadius: "4px" }}
-                  >
-                    <div />
-                  </Skeleton>
-                ) : (
-                  <img src={test} alt="" />
-                )}
+                <img src={test} alt="" />
               </div>{" "}
             </a>
             <div className="card-disable" data-aos="fade-up">
