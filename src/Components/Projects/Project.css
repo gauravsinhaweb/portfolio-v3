@@ -16,22 +16,6 @@
   justify-content: space-around;
 }
 
-.MuiSkeleton-wave::after {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
-  position: absolute;
-  animation: MuiSkeleton-keyframes-wave 1.6s ease-in-out 0.5s infinite;
-  transform: translateX(-100%);
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(0, 0, 0, 0.08),
-    transparent
-  );
-}
 .card {
   position: relative;
   margin: 2rem;
@@ -68,18 +52,25 @@
   text-transform: capitalize;
 }
 @media screen and (max-width: 500px) {
-  .project-wrapper {
-    margin: 30px 0;
-  }
   .project-list {
     display: block;
   }
-  .card-disable {
-    height: 1rem;
-    text-align: center;
-    margin-top: 0rem;
+  .card-mini {
+    font-family: roboto, sans-serif;
+    line-height: 2;
+    text-align: justify;
+    font-size: 20px;
+    color: var(--sec-text);
+    text-transform: capitalize;
+    padding: 1rem;
   }
-  .card {
-    width: 90vw;
+
+  .card-mini img {
+    width: 100%;
+    margin: 4rem 0rem;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 4px;
+    height: 20rem;
   }
 }
