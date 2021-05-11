@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Project.css";
 import test from "../../images/MacBook.svg";
+import { CircularProgress } from "@material-ui/core";
 function Project() {
   const [show] = useState(window.innerWidth <= 600 ? true : false);
 
@@ -27,7 +28,7 @@ function Project() {
                 data-aos="fade-right"
                 className="card"
               >
-                <img src={test} alt="" />
+                <img src={test ? test : <CircularProgress />} alt="" />
               </div>{" "}
             </a>
             <div className="card-disable" data-aos="fade-up">
@@ -63,7 +64,7 @@ function Project() {
                 data-aos="fade-left"
                 className="card"
               >
-                <img src={test} alt="" />
+                <img src={test ? test : <CircularProgress />} alt="" />
               </div>{" "}
             </a>
           </div>{" "}
@@ -81,7 +82,7 @@ function Project() {
                 data-aos="fade-right"
                 className="card"
               >
-                <img src={test} alt="" />
+                <img src={test ? test : <CircularProgress />} alt="" />
               </div>{" "}
             </a>
             <div className="card-disable" data-aos="fade-up">
@@ -116,7 +117,7 @@ function Project() {
                 data-aos="fade-left"
                 className="card"
               >
-                <img src={test} alt="" />
+                <img src={test ? test : <CircularProgress />} alt="" />
               </div>
             </a>
           </div>{" "}
@@ -138,7 +139,7 @@ function Project() {
                 href="https://moviezoid.netlify.app/"
               >
                 {" "}
-                <img src={test} alt="" />
+                <img src={test ? test : <CircularProgress />} alt="" />
               </a>
             </div>
             <div data-aos="fade-up">
@@ -165,7 +166,7 @@ function Project() {
                 href="https://authentication-firebase.netlify.app/"
               >
                 {" "}
-                <img src={test} alt="" />
+                <img src={test ? test : <CircularProgress />} alt="" />
               </a>
             </div>
             <div data-aos="fade-up">
@@ -188,7 +189,7 @@ function Project() {
                 href="https://gauravsinhaweb-twitterclone.netlify.app/"
               >
                 {" "}
-                <img src={test} alt="" />
+                <img src={test ? test : <CircularProgress />} alt="" />
               </a>
             </div>
             <div data-aos="fade-up">
@@ -212,7 +213,7 @@ function Project() {
                 href="https://gauravsinhaweb.github.io/TodoList-App/"
               >
                 {" "}
-                <img src={test} alt="" />
+                <img src={test ? test : <CircularProgress />} alt="" />
               </a>
             </div>
             <div data-aos="fade-up">
