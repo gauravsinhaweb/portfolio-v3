@@ -39,6 +39,7 @@
   object-fit: cover;
   border-radius: 4px;
   transition: transform 0.5s ease;
+  background-color: #212121;
 }
 .card img:hover {
   transform: scale(1.05);
