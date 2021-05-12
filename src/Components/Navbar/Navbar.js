@@ -40,14 +40,14 @@ function Navbar() {
         <Link onClick={linkHandler} to="about" smooth duration={1000}>
           <li>Me!</li>
         </Link>
-        {/* <Link onClick={linkHandler} to="skills" smooth duration={1000}>
-          <li>Skillset</li>
-        </Link>
-        <Link onClick={linkHandler} to="workExp" smooth duration={1000}>
+        {/* <Link onClick={linkHandler} to="blogs" smooth duration={1000}>
           <li>Work Experience</li>
         </Link> */}
         <Link onClick={linkHandler} to="projects" smooth duration={1000}>
           <li>Projects</li>
+        </Link>{" "}
+        <Link onClick={linkHandler} to="blogs" smooth duration={1000}>
+          <li>Blogs</li>
         </Link>
         <a
           style={{ textDecoration: "none" }}
