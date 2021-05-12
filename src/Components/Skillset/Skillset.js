@@ -44,7 +44,7 @@ function Skillset({ theme }) {
             <div
               data-aos="fade-up"
               data-aos-offset="200"
-              data-aos-delay="200"
+              data-aos-delay="300"
               data-aos-duration="1000"
             >
               <div className="icon">
@@ -105,34 +105,41 @@ function Skillset({ theme }) {
           </>
         ) : (
           <>
-            <div>
-              <div className="icon">
-                <img src={js} alt="" height="80px" width="80px" />
-                <img src={react} alt="" height="80px" width="80px" />
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
+              <div>
+                <div className="icon">
+                  <img src={js} alt="" height="80px" width="80px" />
+                  <img src={react} alt="" height="80px" width="80px" />
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="icon">
-                <img src={terminal} alt="" height="80px" width="80px" />
-                <img src={bootstrap} alt="" height="80px" width="80px" />
+              <div>
+                <div className="icon">
+                  <img src={terminal} alt="" height="80px" width="80px" />
+                  <img src={bootstrap} alt="" height="80px" width="80px" />
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="icon">
-                <img src={github} alt="" height="80px" width="80px" />
-                <img src={mui} alt="" height="80px" width="80px" />
+              <div>
+                <div className="icon">
+                  <img src={github} alt="" height="80px" width="80px" />
+                  <img src={mui} alt="" height="80px" width="80px" />
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="icon">
-                <img src={netlify} alt="" height="80px" width="80px" />
-                <img src={webpack} alt="" height="80px" width="80px" />
+              <div>
+                <div className="icon">
+                  <img src={netlify} alt="" height="80px" width="80px" />
+                  <img src={webpack} alt="" height="80px" width="80px" />
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="icon">
-                <img src={figma} alt="" height="80px" width="80px" />
-                <img src={firebase} alt="" height="80px" width="80px" />
+              <div>
+                <div className="icon">
+                  <img src={figma} alt="" height="80px" width="80px" />
+                  <img src={firebase} alt="" height="80px" width="80px" />
+                </div>
               </div>
             </div>
           </>
