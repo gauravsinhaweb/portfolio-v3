@@ -1,0 +1,26 @@
+.bg-underlay-skillset {
+  right: 0;
+  background-color: rgb(255, 92, 119);
+}
+
+.skillset {
+  padding-bottom: 50px;
+}
+.icon {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+.icon-box {
+  height: 100px;
+  width: 100px;
+  margin: 0.5rem;
+}
+@media screen and (max-width: 500px) {
+  .icon {
+    box-sizing: border-box;
+  }
+  .icon img {
+    margin: 1rem;
+  }
+}

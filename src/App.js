@@ -3,9 +3,9 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Myself from "./Components/Myself/Myself";
 import About from "./Components/About/About";
-// import Skillset from "./Components/Skillset/Skillset";
+import Skillset from "./Components/Skillset/Skillset";
 // import Project from "./Components/Projects/Project";
-import Contact from "./Components/Contact/Contact";
+// import Contact from "./Components/Contact/Contact";
 // import WorkExp from "./Components/WorkExp/WorkExp";
 // import Footer from "./Components/Footer/Footer";
 import Toggle from "./Components/Toggle/Toggle";
@@ -51,13 +51,13 @@ function App() {
             <Toggle toggleTheme={toggleTheme} theme={theme} />
             <Navbar />
             <Myself />
-            <div style={{ height: "8rem" }}></div>
+            <div style={{ height: "8rem" }} />
             <About />
-            <div style={{ height: "8rem" }}></div>
+            <div style={{ height: "8rem" }} />
             <Project />
-            <div style={{ height: "8rem" }}></div>
+            <div style={{ height: "8rem" }} />
+            <Skillset />
 
-            <Contact theme={theme} />
             <div
               style={{
                 textAlign: "center",
