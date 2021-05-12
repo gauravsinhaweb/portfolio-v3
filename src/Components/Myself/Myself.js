@@ -48,7 +48,7 @@ function Myself() {
           data-aos-delay="300"
           data-aos-offset="0"
         >
-          <Link to="contact" smooth duration={1000}>
+          <Link to="blogs" smooth duration={1000}>
             <Button text="Connect with me" />
           </Link>
         </div>

@@ -12,6 +12,7 @@ import Toggle from "./Components/Toggle/Toggle";
 import Aos from "aos";
 import animationData from "./loading.json";
 import Lottie from "react-lottie";
+import Blogs from "./Components/Blogs/Blogs";
 function App() {
   useEffect(() => {
     Aos.init({ duration: 1500 });
@@ -57,7 +58,8 @@ function App() {
             <Project />
             <div style={{ height: "8rem" }} />
             <Skillset />
-
+            <div style={{ height: "8rem" }} />
+            <Blogs theme={theme} />
             <div
               style={{
                 textAlign: "center",

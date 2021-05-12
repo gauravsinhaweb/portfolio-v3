@@ -1,0 +1,31 @@
+.bg-underlay-blogs {
+  left: 0;
+  background-color: #ffe227;
+}
+.blogs-content h3 {
+  position: relative;
+  z-index: 999;
+  margin-bottom: 30rem;
+  font-size: 40px;
+  color: #687980 !important;
+  font-family: "lato" sans-serif;
+  text-align: center;
+}
+.dev {
+  position: absolute;
+  z-index: 0;
+}
+.soon {
+  z-index: 99;
+  position: absolute;
+  bottom: 8rem;
+}
+.contact {
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+.icon {
+  margin: 0.5rem;
+  font-size: 28px !important;
+}

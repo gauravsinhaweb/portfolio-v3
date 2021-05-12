@@ -1,29 +1,18 @@
+import { Tooltip } from "@material-ui/core";
 import React, { useState } from "react";
-import Lottie from "react-lottie";
-import animationData from "./hire.json";
-import "./Skillset.css";
-import js from "../../images/js.svg";
-import react from "../../images/react.svg";
-import figma from "../../images/figma.svg";
 import bootstrap from "../../images/bootstrap.svg";
-import terminal from "../../images/terminal.svg";
-import github from "../../images/github.svg";
+import figma from "../../images/figma.svg";
 import firebase from "../../images/firebase.svg";
+import github from "../../images/github.svg";
+import js from "../../images/js.svg";
 import mui from "../../images/mui.svg";
 import netlify from "../../images/netlify.svg";
+import react from "../../images/react.svg";
+import terminal from "../../images/terminal.svg";
 import webpack from "../../images/webpack.svg";
-import { Tooltip } from "@material-ui/core";
+import "./Skillset.css";
 
-function Skillset({ theme }) {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
+function Skillset() {
   const [show] = useState(window.innerWidth <= 600 ? true : false);
 
   return (
@@ -144,18 +133,6 @@ function Skillset({ theme }) {
             </div>
           </>
         )}
-        {!show ? (
-          <Lottie
-            options={defaultOptions}
-            height={250}
-            width={250}
-            style={{
-              bottom: "-3.4rem",
-              position: "absolute",
-              right: "1rem",
-            }}
-          />
-        ) : null}
       </div>
     </>
   );
