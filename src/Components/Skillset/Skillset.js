@@ -30,61 +30,77 @@ function Skillset({ theme }) {
     <>
       <div id="skillset" className="page skillset" style={{ padding: "0" }}>
         <div className="bg-underlay-skillset bg-underlay"></div>
+
+        <div className="skillset-content">
+          {" "}
+          <h4 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
+            Framework {`&`} Software I worked with..
+          </h4>
+        </div>
+
         {!show ? (
           <>
-            <div className="icon">
-              <Tooltip title="Javascript" placement="left-start">
-                <div className="icon-box">
-                  <img src={js} alt="" height="75px" width="75px" />
-                </div>
-              </Tooltip>
-              <Tooltip title="React JS" placement="top">
-                <div className="icon-box">
-                  <img src={react} alt="" height="75px" width="75px" />
-                </div>
-              </Tooltip>
-              <Tooltip title="Terminal" placement="top">
-                <div className="icon-box">
-                  <img src={terminal} alt="" height="75px" width="75px" />
-                </div>
-              </Tooltip>
-              <Tooltip title="Bootstrap" placement="top">
-                <div className="icon-box">
-                  <img src={bootstrap} alt="" height="75px" width="75px" />
-                </div>
-              </Tooltip>
-              <Tooltip title="GitHub" placement="right">
-                <div className="icon-box">
-                  <img src={github} alt="" height="75px" width="75px" />
-                </div>
-              </Tooltip>
-            </div>
-            <div className="icon">
-              <Tooltip title="Material UI" placement="left">
-                <div className="icon-box">
-                  <img src={mui} alt="" height="75px" width="75px" />
-                </div>
-              </Tooltip>
-              <Tooltip title="Netlify" placement="bottom">
-                <div className="icon-box">
-                  <img src={netlify} alt="" height="75px" width="75px" />
-                </div>
-              </Tooltip>
-              <Tooltip title="Webpack" placement="bottom">
-                <div className="icon-box">
-                  <img src={webpack} alt="" height="75px" width="75px" />
-                </div>
-              </Tooltip>
-              <Tooltip title="figma" placement="bottom">
-                <div className="icon-box">
-                  <img src={figma} alt="" height="75px" width="75px" />
-                </div>
-              </Tooltip>
-              <Tooltip title="firebase" placement="right">
-                <div className="icon-box">
-                  <img src={firebase} alt="" height="75px" width="75px" />
-                </div>
-              </Tooltip>
+            {" "}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <div className="icon">
+                <Tooltip title="Javascript" placement="left-start">
+                  <div className="icon-box">
+                    <img src={js} alt="" height="75px" width="75px" />
+                  </div>
+                </Tooltip>
+                <Tooltip title="React JS" placement="top">
+                  <div className="icon-box">
+                    <img src={react} alt="" height="75px" width="75px" />
+                  </div>
+                </Tooltip>
+                <Tooltip title="Terminal" placement="top">
+                  <div className="icon-box">
+                    <img src={terminal} alt="" height="75px" width="75px" />
+                  </div>
+                </Tooltip>
+                <Tooltip title="Bootstrap" placement="top">
+                  <div className="icon-box">
+                    <img src={bootstrap} alt="" height="75px" width="75px" />
+                  </div>
+                </Tooltip>
+                <Tooltip title="GitHub" placement="right">
+                  <div className="icon-box">
+                    <img src={github} alt="" height="75px" width="75px" />
+                  </div>
+                </Tooltip>
+              </div>
+              <div className="icon">
+                <Tooltip title="Material UI" placement="left">
+                  <div className="icon-box">
+                    <img src={mui} alt="" height="75px" width="75px" />
+                  </div>
+                </Tooltip>
+                <Tooltip title="Netlify" placement="bottom">
+                  <div className="icon-box">
+                    <img src={netlify} alt="" height="75px" width="75px" />
+                  </div>
+                </Tooltip>
+                <Tooltip title="Webpack" placement="bottom">
+                  <div className="icon-box">
+                    <img src={webpack} alt="" height="75px" width="75px" />
+                  </div>
+                </Tooltip>
+                <Tooltip title="figma" placement="bottom">
+                  <div className="icon-box">
+                    <img src={figma} alt="" height="75px" width="75px" />
+                  </div>
+                </Tooltip>
+                <Tooltip title="firebase" placement="right">
+                  <div className="icon-box">
+                    <img src={firebase} alt="" height="75px" width="75px" />
+                  </div>
+                </Tooltip>
+              </div>
             </div>
           </>
         ) : (
@@ -121,7 +137,6 @@ function Skillset({ theme }) {
             </div>
           </>
         )}
-
         {!show ? (
           <Lottie
             options={defaultOptions}

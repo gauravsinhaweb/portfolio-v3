@@ -1,21 +1,31 @@
 .bg-underlay-skillset {
   right: 0;
-  background-color: rgb(255, 92, 119);
+  background-color: #02475e;
+}
+.skillset-content h4 {
+  z-index: 999;
+
+  margin-bottom: 10rem;
+  font-size: 30px;
+  color: #687980 !important;
+  font-family: "lato" sans-serif;
+
+  text-align: center;
 }
 
-.skillset {
-  padding-bottom: 50px;
-}
 .icon {
   z-index: 999;
   display: flex;
   justify-content: center;
 }
 .icon-box {
+  z-index: 999;
+
   height: 100px;
   width: 100px;
   margin: 0.5rem;
 }
+
 @media screen and (max-width: 500px) {
   .icon {
     box-sizing: border-box;
