@@ -23,6 +23,7 @@
   width: 40vw;
   margin-top: 6rem;
   overflow: hidden;
+  border-radius: 4px;
 }
 .card-disable {
   margin: 2rem;
