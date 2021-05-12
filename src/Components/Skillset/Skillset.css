@@ -27,14 +27,19 @@
 
 @media screen and (max-width: 500px) {
   .icon {
+    z-index: 999;
+
     box-sizing: border-box;
   }
+
   .icon img {
     margin: 1rem;
+    z-index: 999;
   }
   .skillset-content h4 {
     margin: 5rem 0rem;
     padding: 1rem;
     font-size: 28px;
+    z-index: 999;
   }
 }

@@ -97,7 +97,8 @@ h1 {
 
 @media screen and (max-width: 990px) {
   .bg-underlay {
-    width: 50vw;
+    width: 64vw;
+    z-index: 0;
   }
 }
 
