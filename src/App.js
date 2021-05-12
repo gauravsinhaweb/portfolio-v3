@@ -71,7 +71,7 @@ function App() {
                 color: theme ? "#eee" : "#000",
               }}
             >
-              Made with ❤️ by Gaurav Sinha • 2021
+              Developed by Gaurav Sinha • 2021
             </div>
           </div>{" "}
         </>
