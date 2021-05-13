@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import dev from "./dev.json";
-import soon from "./soon.json";
+import soonLight from "./soonLight.json";
+import soonDark from "./soonDark.json";
+
 import hire from "./hire.json";
 import "./Blogs.css";
 import Lottie from "react-lottie";
@@ -18,10 +20,18 @@ function Blogs({ theme }) {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  const soonLottie = {
+  const soonL = {
     loop: true,
     autoplay: true,
-    animationData: soon,
+    animationData: soonLight,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const soonD = {
+    loop: true,
+    autoplay: true,
+    animationData: soonDark,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -36,6 +46,7 @@ function Blogs({ theme }) {
   };
   const [show] = useState(window.innerWidth <= 600 ? true : false);
 
+  // console.log(soonLight.layers[1].t.d.k[0].s.fc, theme);
   return (
     <>
       <div id="blogs" className="page blogs" style={{ padding: "0" }}>
@@ -53,16 +64,20 @@ function Blogs({ theme }) {
         </div>
 
         <div className="soon">
-          {" "}
-          <Lottie options={soonLottie} height={250} width={250} />
+          {theme ? (
+            <Lottie options={soonL} height={250} width={250} />
+          ) : (
+            <Lottie options={soonD} height={250} width={250} />
+          )}
         </div>
         {!show ? (
           <Lottie
+            theme={theme}
             options={hireLottie}
             height={250}
             width={250}
             style={{
-              bottom: "-3.4rem",
+              bottom: "-3rem",
               position: "absolute",
               right: "1rem",
             }}

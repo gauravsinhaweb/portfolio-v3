@@ -4,7 +4,7 @@
 }
 .project-content h3 {
   font-size: 40px;
-  color: #5b6d5b !important;
+  color: var(--sec-text) !important;
   font-family: "lato" sans-serif;
   text-transform: uppercase;
   margin: 2rem;
@@ -49,7 +49,7 @@
   line-height: 2;
   text-align: justify;
   font-size: 20px;
-  color: var(--sec-text);
+  color: var(--sec-text) !important;
   text-transform: capitalize;
 }
 @media screen and (max-width: 500px) {
@@ -77,4 +77,8 @@
     background-color: #212121;
     z-index: 999;
   }
+}
+
+.dark .card-disable p {
+  color: var(--lighter) !important;
 }

@@ -29,3 +29,6 @@
   margin: 0.5rem;
   font-size: 28px !important;
 }
+.dark .blogs-content h3 {
+  color: var(--lighter) !important;
+}

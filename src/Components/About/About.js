@@ -43,7 +43,7 @@ function About() {
             data-aos-delay="50"
             data-aos-duration="1000"
           >
-            <h3 className="">About Me</h3>
+            <h3 >About Me</h3>
           </div>
           <div
             data-aos="fade-up"

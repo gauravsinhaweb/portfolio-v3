@@ -43,3 +43,7 @@
     z-index: 999;
   }
 }
+
+.dark .skillset-content h4 {
+  color: var(--lighter) !important;
+}
