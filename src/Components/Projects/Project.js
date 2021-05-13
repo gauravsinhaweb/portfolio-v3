@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Project.css";
-import test from "../../images/MacBook.svg";
 function Project() {
   const [show] = useState(window.innerWidth <= 600 ? true : false);
-
+  const test =
+    "https://res.cloudinary.com/dlrm1ch0d/image/upload/v1620924271/MacBook_qortp7.svg";
   return (
     <div id="projects" className="page project">
       <div className="bg-underlay-project bg-underlay"></div>

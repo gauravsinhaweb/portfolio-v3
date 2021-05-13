@@ -3,7 +3,9 @@ import "./Myself.css";
 import { Link } from "react-scroll";
 import Typography from "@material-ui/core/Typography";
 import Button from "../Button/Button";
-import image from "../../gaurav.jpg";
+
+const image =
+  "https://res.cloudinary.com/dlrm1ch0d/image/upload/v1620924142/gaurav_ajpgip.png";
 
 function Myself() {
   return (
