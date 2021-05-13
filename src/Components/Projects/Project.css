@@ -82,3 +82,6 @@
 .dark .card-disable p {
   color: var(--lighter) !important;
 }
+.dark .card-mini {
+  color: var(--lighter) !important;
+}

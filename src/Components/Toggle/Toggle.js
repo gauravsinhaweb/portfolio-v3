@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Toggle.css";
 import Lottie from "react-lottie";
 import animationData from "./light.json";
 import darkLottie from "./dark.json";
+import NightsStayIcon from "@material-ui/icons/NightsStay";
+import WbSunnyIcon from "@material-ui/icons/WbSunny";
 
 function Toggle({ toggleTheme, theme }) {
   const defaultOptions = {
@@ -21,29 +23,37 @@ function Toggle({ toggleTheme, theme }) {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  const [show] = useState(window.innerWidth <= 600 ? true : false);
 
   return (
     <div className="nav-toggle switch">
       <label className="switch">
-        <input onClick={toggleTheme} type="checkbox" />
-        {theme ? (
-          <Lottie
-            className="lottie"
-            options={defaultOptions}
-            height={show ? 150 : 250}
-            width={show ? 150 : 250}
-            style={{ cursor: "pointer" }}
-          />
-        ) : (
-          <Lottie
-            className="lottie"
-            options={darkOptions}
-            height={show ? 150 : 250}
-            width={show ? 150 : 250}
-            style={{ cursor: "pointer" }}
-          />
-        )}
+        <div className="content" onClick={toggleTheme}>
+          <div className="icon-content">
+            {" "}
+            {!theme ? (
+              <NightsStayIcon className="icon-toggle" />
+            ) : (
+              <WbSunnyIcon className="icon-toggle" />
+            )}
+          </div>
+          <div className="lottie">
+            {theme ? (
+              <Lottie
+                options={defaultOptions}
+                height={150}
+                width={150}
+                style={{ cursor: "pointer" }}
+              />
+            ) : (
+              <Lottie
+                options={darkOptions}
+                height={150}
+                width={150}
+                style={{ cursor: "pointer" }}
+              />
+            )}
+          </div>
+        </div>
       </label>
     </div>
   );
