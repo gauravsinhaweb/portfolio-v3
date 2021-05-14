@@ -32,3 +32,8 @@
 .dark .blogs-content h3 {
   color: var(--lighter) !important;
 }
+@media screen and (max-width: 600px) {
+  .soon {
+    bottom: 4rem;
+  }
+}
