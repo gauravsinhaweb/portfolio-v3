@@ -68,14 +68,11 @@
 @media screen and (max-width: 500px) {
   .about-content h3 {
     margin-top: 3rem;
-    margin-bottom: 0rem;
   }
   .about-content p {
-    margin: 1rem 0;
     font-size: 22px;
-
     width: 100vw;
-    padding: 0 0.75em;
+    padding: 0 1em;
     line-height: 2em;
   }
 }
