@@ -36,39 +36,41 @@ function Navbar() {
           <MenuIcon className="nav-icon" onClick={() => setToggle(!toggle)} />
         )}{" "}
       </div>
-      <div className={show ? "nav-list" : "hide"}>
-        <Link onClick={linkHandler} to="about" smooth duration={1000}>
-          <li>Me!</li>
-        </Link>
-        {/* <Link onClick={linkHandler} to="blogs" smooth duration={1000}>
+      <ul>
+        <div className={show ? "nav-list" : "hide"}>
+          <Link onClick={linkHandler} to="about" smooth duration={1000}>
+            <li>Me!</li>
+          </Link>
+          {/* <Link onClick={linkHandler} to="blogs" smooth duration={1000}>
           <li>Work Experience</li>
         </Link> */}
-        <Link onClick={linkHandler} to="projects" smooth duration={1000}>
-          <li>Projects</li>
-        </Link>{" "}
-        <Link onClick={linkHandler} to="blogs" smooth duration={1000}>
-          <li>Blogs</li>
-        </Link>
-        <a
-          style={{ textDecoration: "none" }}
-          className="icons"
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://drive.google.com/u/0/uc?id=12jhwJe3wY06XwM5pqZvXFCQWIdd547IS&export=download"
-        >
-          <li>Resume</li>
-        </a>
-        <a
-          className="icons"
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://github.com/gauravsinhaweb"
-        >
-          <li>
-            <GitHubIcon />
-          </li>
-        </a>
-      </div>
+          <Link onClick={linkHandler} to="projects" smooth duration={1000}>
+            <li>Projects</li>
+          </Link>{" "}
+          <Link onClick={linkHandler} to="blogs" smooth duration={1000}>
+            <li>Blogs</li>
+          </Link>
+          <a
+            style={{ textDecoration: "none" }}
+            className="icons"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://drive.google.com/u/0/uc?id=12jhwJe3wY06XwM5pqZvXFCQWIdd547IS&export=download"
+          >
+            <li>Resume</li>
+          </a>
+          <a
+            className="icons"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/gauravsinhaweb"
+          >
+            <li>
+              <GitHubIcon />
+            </li>
+          </a>
+        </div>
+      </ul>
     </div>
   );
 }
