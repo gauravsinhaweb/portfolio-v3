@@ -30,17 +30,23 @@
   --dark-green2: #27726993;
   --dark-green3: #43978d93;
 }
-
+h3,
+li,
+h4 {
+  font-family: "lato", sans-serif;
+}
 .App {
   user-select: none;
   min-height: 100vh;
-  font-family: "lato", sans-serif;
+  font-family: "lato", sans-serif !important;
 }
 .light {
-  background-color: var(--light);
+  background-color: var(--light) !important;
+  transition: all cubic-bezier(0.17, 0.67, 0.83, 0.67) 0.125s;
 }
 .dark {
   background-color: var(--main-text) !important;
+  transition: all cubic-bezier(0.17, 0.67, 0.83, 0.67) 0.125s;
 }
 
 * {
@@ -74,7 +80,9 @@
 .dark .sonar-wave {
   background-color: #41d45c;
 }
-
+.container {
+  transition: all ease-in-out 2s;
+}
 .page {
   z-index: 99;
   position: relative;
@@ -84,7 +92,9 @@
   justify-content: center;
   align-items: center;
 }
-
+p {
+  font-family: "lato", sans-serif;
+}
 h1 {
   text-transform: uppercase;
   font-size: 2.5rem;
@@ -100,26 +110,7 @@ h1 {
     width: 64vw;
     z-index: 0;
   }
-}
-
-.footer {
-  width: 100%;
-  padding: 10px 0;
-  background-color: var(--main-text);
-  color: var(--light);
-}
-
-.footer p {
-  margin: 4px 0;
-  text-align: center;
-}
-
-.footer a {
-  background-color: var(--light);
-  color: var(--main-text);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 0 5px;
-  border-radius: 3px;
+  .App {
+    overflow-x: hidden;
+  }
 }

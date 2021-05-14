@@ -85,3 +85,6 @@
 .dark .card-mini {
   color: var(--lighter) !important;
 }
+.dark .project-content h3 {
+  color: var(--lighter) !important;
+}

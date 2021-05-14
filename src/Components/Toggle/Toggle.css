@@ -1,11 +1,14 @@
 .nav-toggle {
   z-index: 99;
   position: absolute !important;
+  transition: all cubic-bezier(0.17, 0.67, 0.83, 0.67) 0.125s !important;
 }
 .icon-content {
   display: none;
 }
-
+.lottie {
+  z-index: 999;
+}
 @media screen and (max-width: 600px) {
   .icon-content {
     display: contents;
@@ -14,6 +17,7 @@
     font-size: 30px !important;
     color: var(--sec-text);
     margin: 0.75rem !important;
+    transition: all cubic-bezier(0.17, 0.67, 0.83, 0.67) 0.125s !important;
   }
   .lottie {
     display: none;

@@ -6,7 +6,7 @@ import darkLottie from "./dark.json";
 import NightsStayIcon from "@material-ui/icons/NightsStay";
 import WbSunnyIcon from "@material-ui/icons/WbSunny";
 
-function Toggle({ toggleTheme, theme }) {
+function Toggle({ setTheme, theme }) {
   const defaultOptions = {
     loop: false,
     autoplay: false,
@@ -27,7 +27,7 @@ function Toggle({ toggleTheme, theme }) {
   return (
     <div className="nav-toggle switch">
       <label className="switch">
-        <div className="content" onClick={toggleTheme}>
+        <div className="content" onClick={() => setTheme(!theme)}>
           <div className="icon-content">
             {" "}
             {!theme ? (

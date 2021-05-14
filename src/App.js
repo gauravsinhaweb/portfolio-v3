@@ -14,13 +14,7 @@ function App() {
     Aos.init({ duration: 1500 });
   }, []);
   const [theme, setTheme] = useState(false);
-  const toggleTheme = () => {
-    if (theme) {
-      setTheme(false);
-    } else {
-      setTheme(true);
-    }
-  };
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -33,45 +27,49 @@ function App() {
 
   return (
     <>
-      <Suspense
-        fallback={
-          <Lottie
-            options={defaultOptions}
-            height={250}
-            width={250}
-            style={{ marginTop: "12rem" }}
-          />
-        }
-      >
-        <>
-          <div className={theme ? "App dark" : "App light"}>
-            <Toggle toggleTheme={toggleTheme} theme={theme} />
-            <Navbar />
-            <Myself />
-            <div style={{ height: "8rem" }} />
-            <About />
-            <div style={{ height: "8rem" }} />
-            <Project />
-            <div style={{ height: "8rem" }} />
-            <Skillset />
-            <div style={{ height: "8rem" }} />
-            <Blogs theme={theme} />
-            <div
-              style={{
-                textAlign: "center",
-                marginTop: "1rem",
-                position: "relative",
-                paddingBottom: "1rem",
-                fontFamily: "lato",
-                opacity: "0.5",
-                color: theme ? "#eee" : "#000",
-              }}
-            >
-              Developed by Gaurav Sinha • 2021
-            </div>
-          </div>{" "}
-        </>
-      </Suspense>
+      {" "}
+      <div className="container">
+        {" "}
+        <div className={!theme ? "light" : "dark"}>
+          <Suspense
+            fallback={
+              <Lottie
+                options={defaultOptions}
+                height={250}
+                width={250}
+                style={{ marginTop: "12rem" }}
+              />
+            }
+          >
+            <>
+              <Toggle setTheme={setTheme} theme={theme} />
+              <Navbar />
+              <Myself />
+              <div style={{ height: "8rem" }} />
+              <About />
+              <div style={{ height: "8rem" }} />
+              <Project />
+              <div style={{ height: "8rem" }} />
+              <Skillset />
+              <div style={{ height: "8rem" }} />
+              <Blogs theme={theme} />
+              <div
+                style={{
+                  textAlign: "center",
+                  marginTop: "1rem",
+                  position: "relative",
+                  paddingBottom: "1rem",
+                  fontFamily: "lato",
+                  opacity: "0.5",
+                  color: theme ? "#eee" : "#000",
+                }}
+              >
+                Developed by Gaurav Sinha • 2021
+              </div>
+            </>
+          </Suspense>{" "}
+        </div>{" "}
+      </div>
     </>
   );
 }
