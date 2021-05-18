@@ -30,6 +30,9 @@
   --dark-green2: #27726993;
   --dark-green3: #43978d93;
 }
+Body {
+  user-select: none;
+}
 h3,
 li,
 h4 {
