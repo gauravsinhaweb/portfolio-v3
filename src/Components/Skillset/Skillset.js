@@ -1,11 +1,11 @@
 import { Tooltip } from "@material-ui/core";
 import React, { useState } from "react";
-import bootstrap from "../../images/bootstrap.svg";
+import typescript from "../../images/typescript.svg";
 import figma from "../../images/figma.svg";
 import firebase from "../../images/firebase.svg";
 import github from "../../images/github.svg";
 import js from "../../images/js.svg";
-import mui from "../../images/mui.svg";
+import saas from "../../images/saas.svg";
 import netlify from "../../images/netlify.svg";
 import react from "../../images/react.svg";
 import terminal from "../../images/terminal.svg";
@@ -52,9 +52,9 @@ function Skillset() {
                     <img src={terminal} alt="" height="75px" width="75px" />
                   </div>
                 </Tooltip>
-                <Tooltip title="Bootstrap" placement="top">
+                <Tooltip title="Typescript" placement="top">
                   <div className="icon-box">
-                    <img src={bootstrap} alt="" height="75px" width="75px" />
+                    <img src={typescript} alt="" height="75px" width="75px" />
                   </div>
                 </Tooltip>
                 <Tooltip title="GitHub" placement="right">
@@ -64,9 +64,9 @@ function Skillset() {
                 </Tooltip>
               </div>
               <div className="icon">
-                <Tooltip title="Material UI" placement="left">
+                <Tooltip title="Saas" placement="left">
                   <div className="icon-box">
-                    <img src={mui} alt="" height="75px" width="75px" />
+                    <img src={saas} alt="" height="75px" width="75px" />
                   </div>
                 </Tooltip>
                 <Tooltip title="Netlify" placement="bottom">
@@ -109,13 +109,13 @@ function Skillset() {
               <div>
                 <div className="icon">
                   <img src={terminal} alt="" height="80px" width="80px" />
-                  <img src={bootstrap} alt="" height="80px" width="80px" />
+                  <img src={typescript} alt="" height="80px" width="80px" />
                 </div>
               </div>
               <div>
                 <div className="icon">
                   <img src={github} alt="" height="80px" width="80px" />
-                  <img src={mui} alt="" height="80px" width="80px" />
+                  <img src={saas} alt="" height="80px" width="80px" />
                 </div>
               </div>
               <div>
