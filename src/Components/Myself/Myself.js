@@ -4,16 +4,16 @@ import { Link } from "react-scroll";
 import Typography from "@material-ui/core/Typography";
 import Button from "../Button/Button";
 
-const image =
-  "https://res.cloudinary.com/dlrm1ch0d/image/upload/v1620924142/gaurav_ajpgip.png";
-
 function Myself() {
   return (
     <div id="myself" className="myself">
       <div className="bg-underlay-myself bg-underlay"></div>
       <div className="sonar-wrapper">
         <div className="sonar-emitter">
-          <img src={image} alt="gaurav" />
+          <img
+            src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621761887/WhatsApp_Image_2021-05-23_at_14.52_1_etvclw.png"
+            alt="gaurav"
+          />
           <div className="sonar-wave"></div>
         </div>
       </div>
