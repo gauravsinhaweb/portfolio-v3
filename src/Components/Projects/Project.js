@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./Project.css";
 function Project() {
   const [show] = useState(window.innerWidth <= 600 ? true : false);
-  const test =
-    "https://res.cloudinary.com/dlrm1ch0d/image/upload/v1620924271/MacBook_qortp7.svg";
+
   return (
     <div id="projects" className="page project">
       <div className="bg-underlay-project bg-underlay"></div>
@@ -27,7 +26,10 @@ function Project() {
                 data-aos="fade-right"
                 className="card"
               >
-                <img src={test} alt="" />
+                <img
+                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/moviezoid_c4gozn.png"
+                  alt=""
+                />
               </div>{" "}
             </a>
             <div className="card-disable" data-aos="fade-up">
@@ -63,7 +65,10 @@ function Project() {
                 data-aos="fade-left"
                 className="card"
               >
-                <img src={test} alt="" />
+                <img
+                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/form_ntgo5f.png"
+                  alt=""
+                />
               </div>{" "}
             </a>
           </div>{" "}
@@ -81,7 +86,10 @@ function Project() {
                 data-aos="fade-right"
                 className="card"
               >
-                <img src={test} alt="" />
+                <img
+                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/twitter_suko6k.png"
+                  alt=""
+                />
               </div>{" "}
             </a>
             <div className="card-disable" data-aos="fade-up">
@@ -116,7 +124,10 @@ function Project() {
                 data-aos="fade-left"
                 className="card"
               >
-                <img src={test} alt="" />
+                <img
+                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/todo_an3rht.png"
+                  alt=""
+                />
               </div>
             </a>
           </div>{" "}
@@ -138,7 +149,10 @@ function Project() {
                 href="https://moviezoid.netlify.app/"
               >
                 {" "}
-                <img src={test} alt="" />
+                <img
+                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/moviezoid_c4gozn.png"
+                  alt=""
+                />
               </a>
               <div data-aos="fade-up">
                 <p>
@@ -164,7 +178,10 @@ function Project() {
                 href="https://authentication-firebase.netlify.app/"
               >
                 {" "}
-                <img src={test} alt="" />
+                <img
+                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/form_ntgo5f.png"
+                  alt=""
+                />
               </a>
             </div>
             <div data-aos="fade-up">
@@ -187,7 +204,10 @@ function Project() {
                 href="https://gauravsinhaweb-twitterclone.netlify.app/"
               >
                 {" "}
-                <img src={test} alt="" />
+                <img
+                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/twitter_suko6k.png"
+                  alt=""
+                />
               </a>
             </div>
             <div data-aos="fade-up">
@@ -211,7 +231,10 @@ function Project() {
                 href="https://gauravsinhaweb.github.io/TodoList-App/"
               >
                 {" "}
-                <img src={test} alt="" />
+                <img
+                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/todo_an3rht.png"
+                  alt=""
+                />
               </a>
             </div>
             <div data-aos="fade-up">
