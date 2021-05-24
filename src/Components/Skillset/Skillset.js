@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import typescript from "../../images/typescript.svg";
 import figma from "../../images/figma.svg";
 import firebase from "../../images/firebase.svg";
-import github from "../../images/github.svg";
+import git from "../../images/git.svg";
 import js from "../../images/js.svg";
 import saas from "../../images/saas.svg";
 import netlify from "../../images/netlify.svg";
@@ -57,9 +57,9 @@ function Skillset() {
                     <img src={typescript} alt="" height="75px" width="75px" />
                   </div>
                 </Tooltip>
-                <Tooltip title="GitHub" placement="right">
+                <Tooltip title="Git" placement="right">
                   <div className="icon-box">
-                    <img src={github} alt="" height="75px" width="75px" />
+                    <img src={git} alt="" height="75px" width="75px" />
                   </div>
                 </Tooltip>
               </div>
@@ -114,7 +114,7 @@ function Skillset() {
               </div>
               <div>
                 <div className="icon">
-                  <img src={github} alt="" height="80px" width="80px" />
+                  <img src={git} alt="" height="80px" width="80px" />
                   <img src={saas} alt="" height="80px" width="80px" />
                 </div>
               </div>
