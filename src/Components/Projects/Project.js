@@ -27,7 +27,7 @@ function Project() {
                 className="card"
               >
                 <img
-                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/moviezoid_c4gozn.png"
+                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621920465/movieZoid_q5h7tm.png"
                   alt=""
                 />
               </div>{" "}
@@ -150,7 +150,7 @@ function Project() {
               >
                 {" "}
                 <img
-                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/moviezoid_c4gozn.png"
+                  src="https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621920465/movieZoid_q5h7tm.png"
                   alt=""
                 />
               </a>
