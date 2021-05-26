@@ -18,7 +18,7 @@
 .soon {
   z-index: 99;
   position: absolute;
-  bottom: 8rem;
+  margin-top: 18rem;
 }
 .contact {
   position: absolute;
