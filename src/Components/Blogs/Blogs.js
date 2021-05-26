@@ -74,8 +74,8 @@ function Blogs({ theme }) {
           <Lottie
             theme={theme}
             options={hireLottie}
-            height={250}
-            width={250}
+            height={200}
+            width={200}
             style={{
               bottom: "-3rem",
               position: "absolute",
