@@ -6,7 +6,7 @@ import firebase from "../../images/firebase.svg";
 import git from "../../images/git.svg";
 import js from "../../images/js.svg";
 import saas from "../../images/saas.svg";
-import netlify from "../../images/netlify.svg";
+import mongodb from "../../images/mongodb.svg";
 import react from "../../images/react.svg";
 import terminal from "../../images/terminal.svg";
 import webpack from "../../images/webpack.svg";
@@ -69,9 +69,9 @@ function Skillset() {
                     <img src={saas} alt="" height="75px" width="75px" />
                   </div>
                 </Tooltip>
-                <Tooltip title="Netlify" placement="bottom">
+                <Tooltip title="mongodb" placement="bottom">
                   <div className="icon-box">
-                    <img src={netlify} alt="" height="75px" width="75px" />
+                    <img src={mongodb} alt="" height="75px" width="75px" />
                   </div>
                 </Tooltip>
                 <Tooltip title="Webpack" placement="bottom">
@@ -120,7 +120,7 @@ function Skillset() {
               </div>
               <div>
                 <div className="icon">
-                  <img src={netlify} alt="" height="80px" width="80px" />
+                  <img src={mongodb} alt="" height="80px" width="80px" />
                   <img src={webpack} alt="" height="80px" width="80px" />
                 </div>
               </div>
