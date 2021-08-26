@@ -55,7 +55,7 @@ function Navbar() {
             className="icons"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://drive.google.com/u/0/uc?id=12jhwJe3wY06XwM5pqZvXFCQWIdd547IS&export=download"
+            href="https://drive.google.com/file/d/1cwHqy62HEWsNHxYU7WOFD-K003oFf-04/view?usp=sharing"
           >
             <li>Resume</li>
           </a>
