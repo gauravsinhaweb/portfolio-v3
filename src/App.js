@@ -48,9 +48,9 @@ function App() {
               <div style={{ height: "8rem" }} />
               <About />
               <div style={{ height: "8rem" }} />
-              <Project />
-              <div style={{ height: "8rem" }} />
               <Skillset />
+              <div style={{ height: "8rem" }} />
+              <Project />
               <div style={{ height: "8rem" }} />
               <Blogs theme={theme} />
               <div

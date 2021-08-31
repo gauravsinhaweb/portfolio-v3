@@ -17,7 +17,10 @@ function Mobile({ info }) {
           </a>
           <div data-aos="fade-up">
             <p>
-              <strong>{info.title}</strong>
+              <strong>
+                {info.title}
+                {` `}
+              </strong>
               {info.desc}
             </p>
           </div>

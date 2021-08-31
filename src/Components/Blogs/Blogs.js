@@ -71,17 +71,23 @@ function Blogs({ theme }) {
           )}
         </div>
         {!show ? (
-          <Lottie
-            theme={theme}
-            options={hireLottie}
-            height={200}
-            width={200}
-            style={{
-              bottom: "-3rem",
-              position: "absolute",
-              right: "1rem",
-            }}
-          />
+          <a
+            href="mailto:sinhagaurav.me@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Lottie
+              theme={theme}
+              options={hireLottie}
+              height={200}
+              width={200}
+              style={{
+                bottom: "-3rem",
+                position: "absolute",
+                right: "1rem",
+              }}
+            />
+          </a>
         ) : null}
         <div className="contact">
           <a

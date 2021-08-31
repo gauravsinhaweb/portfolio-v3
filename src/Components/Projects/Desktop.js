@@ -18,7 +18,10 @@ function Desktop({ info }) {
         </a>
         <div className="card-disable" data-aos="fade-up">
           <p>
-            <strong>{info.title}</strong>
+            <strong>
+              {info.title}
+              {` `}{" "}
+            </strong>
             {` `}
             {info.desc}
           </p>
