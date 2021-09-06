@@ -1,7 +1,7 @@
 const moviezoid_img = `https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621920465/movieZoid_q5h7tm.png`;
 const auth_img = `https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/form_ntgo5f.png`;
 const twitter_img = `https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/twitter_suko6k.png`;
-const todo_img = `https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/todo_an3rht.png`;
+// const todo_img = `https://res.cloudinary.com/dlrm1ch0d/image/upload/v1621759649/todo_an3rht.png`;
 
 function ProjectData() {
   const Data = [
@@ -35,15 +35,15 @@ function ProjectData() {
       curious to know about how the scroll works in three individual
       columns.`,
     },
-    {
-      title: "Todo-List App",
-      src: todo_img,
-      link: "https://gauravsinhaweb.github.io/TodoList-App/",
-      desc: `is a CRUD App where you can
-      Create, Read, Update and Delete the data. It is a simple
-      note-taking platform, where you can write all the important
-      to-dos and delete the tasks after they're done.`,
-    },
+    // {
+    //   title: "Todo-List App",
+    //   src: todo_img,
+    //   link: "https://gauravsinhaweb.github.io/TodoList-App/",
+    //   desc: `is a CRUD App where you can
+    //   Create, Read, Update and Delete the data. It is a simple
+    //   note-taking platform, where you can write all the important
+    //   to-dos and delete the tasks after they're done.`,
+    // },
   ];
 
   return [Data];

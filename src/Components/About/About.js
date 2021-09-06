@@ -19,57 +19,62 @@ function About() {
   const [show] = useState(window.innerWidth <= 600 ? true : false);
   return (
     <>
-      <div id="myself" className="page about">
-        {!show ? (
-          <Lottie
-            options={defaultOptions}
-            height={350}
-            width={350}
-            style={{
-              top: "22rem",
-              position: "absolute",
-              left: "1rem",
-              borderRadius: "100px",
-              opacity: "0.8",
-              transform: "rotate(-5deg) scaleX(-1)",
-            }}
-          />
-        ) : null}
-        <div className="bg-underlay-about bg-underlay"></div>
+      <div id="myself" className="page about-container">
+        <div className="bg-underlay-about bg-underlay"></div>{" "}
         <div className="about-content">
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-          >
-            <h3 >About Me</h3>
+          <h3>About Me</h3>
+        </div>
+        <div className="flex">
+          <div className="about">
+            {!show ? (
+              <Lottie
+                options={defaultOptions}
+                height={350}
+                width={350}
+                style={{
+                  marginLeft: "60px",
+                  borderRadius: "100px",
+                  opacity: "0.9",
+                  transform: "rotate(-5deg) scaleX(-1)",
+                }}
+              />
+            ) : null}
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="100"
-            data-aos-duration="2000"
-            debounceDelay="50" // the delay on debounce used while resizing window (advanced)
-            throttleDelay="99"
-          >
-            <p>
-              Hello, I'm Gaurav Sinha, a 21 year old undergraduate student, who
-              loves coding and designing.. Currently, I am in 2nd year persuing
-              B.Tech from{" "}
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://en.wikipedia.org/wiki/Techno_International_New_Town"
+          <div className="about">
+            <div className="about-content about-text">
+              <div
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              ></div>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="100"
+                data-aos-duration="2000"
+                debounceDelay="50" // the delay on debounce used while resizing window (advanced)
+                throttleDelay="99"
               >
-                Techno India , Kolkata{" "}
-              </a>
-              .
-              <br />
-              Following below are links to my profile to know more about me, and
-              the further pages contains my skillset and projects I've
-              made/worked with.
-            </p>
+                <p>
+                  Hello, I'm Gaurav Sinha, a 21 year old undergraduate student,
+                  who loves coding and designing.. Currently, I am in 2nd year
+                  persuing my B.Tech from{" "}
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Techno_International_New_Town"
+                  >
+                    Techno India , Kolkata{" "}
+                  </a>
+                  .
+                  <br />
+                  Following below are links to my profile to know more about me,
+                  and the further pages contains my skillset and projects I've
+                  made/worked with.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div data-aos="fade-up" className="about-icons">

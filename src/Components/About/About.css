@@ -1,16 +1,24 @@
+.about-container {
+  height: 100vh;
+}
 .bg-underlay-about {
   right: 0;
   background-color: #51c4d3;
 }
-
-.about-content {
-  z-index: 99;
+.flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: space-around;
+  height: 40vh;
+  /* width: 90vw; */
+  margin-top: 80px;
+  margin-bottom: 60px;
 }
-
+.about {
+  width: 100%;
+}
+.about-text {
+  margin-right: 90px;
+}
 .about-content a {
   text-decoration: none;
   color: #126e82;
@@ -26,16 +34,19 @@
   font-family: "lato" sans-serif;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  margin-top: 80px;
 }
 
 .about-content p {
-  margin: 1rem 0;
-  width: 65vw;
+  /* margin: 1rem 0; */
+  opacity: 0.8;
   line-height: 2.5;
+  font-weight: 500;
   text-align: justify;
   font-size: 22px;
-  color: var(--sec-text);
-  text-transform: capitalize;
+  color: #126e82;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .about-icons {
@@ -64,6 +75,12 @@
   .about-icons {
     width: 60vw;
   }
+  .about-text {
+    margin-right: 60px;
+  }
+  .about-content p {
+    font-size: 21px;
+  }
 }
 @media screen and (max-width: 500px) {
   .about-content h3 {
@@ -75,10 +92,24 @@
     padding: 0 1em;
     line-height: 2em;
   }
+  .about-text {
+    margin-right: 0px;
+  }
+
+  .about-content p {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 490px) {
   .about-icons {
     width: 80vw;
+  }
+  .about-text {
+    margin-right: 0px;
+  }
+
+  .about-content p {
+    font-size: 19.9px;
   }
 }
 
