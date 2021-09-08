@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import MenuIcon from "@material-ui/icons/Menu";
-import MenuOpenIcon from "@material-ui/icons/MenuOpen";
+import { CgMenuRightAlt, CgMenuRight } from "react-icons/cg";
+// import { HiMenuAlt3 } from "react-icons/hi";
 function Navbar() {
   const [toggle, setToggle] = useState(false);
   window.addEventListener("resize", () => {
@@ -28,12 +28,15 @@ function Navbar() {
         className={show ? "nav-mini-screen rotate" : "nav-mini-screen disabled"}
       >
         {toggle ? (
-          <MenuOpenIcon
+          <CgMenuRight
             className="nav-icon"
             onClick={() => setToggle(!toggle)}
           />
         ) : (
-          <MenuIcon className="nav-icon" onClick={() => setToggle(!toggle)} />
+          <CgMenuRightAlt
+            className="nav-icon"
+            onClick={() => setToggle(!toggle)}
+          />
         )}{" "}
       </div>
       <ul>
