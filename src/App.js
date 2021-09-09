@@ -32,17 +32,18 @@ function App() {
       {" "}
       <div className="container">
         {" "}
-        <div className={!theme ? "light" : "dark"}>
-          <Suspense
-            fallback={
-              <Lottie
-                options={defaultOptions}
-                height={250}
-                width={250}
-                style={{ marginTop: "12rem" }}
-              />
-            }
-          >
+        <Suspense
+          fallback={
+            <Lottie
+              options={defaultOptions}
+              height={250}
+              width={250}
+              style={{ marginTop: "12rem", backgroundColor: "transparent" }}
+            />
+          }
+        >
+          {" "}
+          <div className={!theme ? "light" : "dark"}>
             <>
               <Toggle setTheme={setTheme} theme={theme} />
               <Navbar />
@@ -69,8 +70,8 @@ function App() {
                 Developed by Gaurav Sinha • 2021
               </div>
             </>
-          </Suspense>{" "}
-        </div>{" "}
+          </div>{" "}
+        </Suspense>{" "}
       </div>
     </>
   );
