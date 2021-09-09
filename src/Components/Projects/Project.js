@@ -7,7 +7,7 @@ function Project() {
   const [Data] = ProjectData();
 
   const [show] = useState(window.innerWidth <= 600 ? true : false);
-  console.log(Data);
+  // console.log(Data);
   return (
     <div id="projects" className="page project">
       <div className="bg-underlay-project bg-underlay"></div>

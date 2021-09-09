@@ -19,13 +19,13 @@ function About() {
   const [show] = useState(window.innerWidth <= 600 ? true : false);
   return (
     <>
-      <div id="myself" className="page about-container">
+      <div id="myself" className="page about about-container">
         <div className="bg-underlay-about bg-underlay"></div>{" "}
         <div className="about-content">
           <h3>About Me</h3>
         </div>
         <div className="flex">
-          <div className="about">
+          <div className="flex-div">
             {!show ? (
               <Lottie
                 options={defaultOptions}
@@ -40,7 +40,7 @@ function About() {
               />
             ) : null}
           </div>
-          <div className="about">
+          <div className="flex-div">
             <div className="about-content about-text">
               <div
                 data-aos="fade-up"

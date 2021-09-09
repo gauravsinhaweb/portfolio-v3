@@ -13,7 +13,9 @@ function App() {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
-  const [theme, setTheme] = useState(false);
+  const [show] = useState(window.innerWidth <= 600 ? true : false);
+
+  const [theme, setTheme] = useState(show ? true : false);
 
   const defaultOptions = {
     loop: true,
